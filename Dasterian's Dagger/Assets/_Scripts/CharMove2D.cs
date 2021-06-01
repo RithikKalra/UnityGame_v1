@@ -20,13 +20,13 @@ public class CharMove2D : MonoBehaviour
     {
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * movementSpeed;
-    }
 
-    void FixedUpdate()
-    {
+        
         if (Input.GetKeyDown("space"))
         {
-            transform.position += new Vector3(0, 1, 0);
+            Vector3 up = transform.TransformDirection(Vector3.up);
+            _rigidbody.AddForce(up * 5, ForceMode2D.Impulse);
         }
     }
+
 }
