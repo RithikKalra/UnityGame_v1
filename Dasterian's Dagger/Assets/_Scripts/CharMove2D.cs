@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CharMove2D : MonoBehaviour
 {
-    public float movementSpeed = 1;
-    public float jumpSpeed = 1;
+    public float movementSpeed = 1f;
+    public float jumpSpeed = 1f;
 
     private Rigidbody2D _rigidbody;
 
@@ -20,6 +20,13 @@ public class CharMove2D : MonoBehaviour
     {
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * movementSpeed;
+    }
 
+    void FixedUpdate()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            transform.position += new Vector3(0, 1, 0);
+        }
     }
 }
