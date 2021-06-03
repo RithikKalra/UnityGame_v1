@@ -25,7 +25,7 @@ public class CharMove2D : MonoBehaviour
         if (Input.GetKeyDown("space"))
         {
             Vector3 up = transform.TransformDirection(Vector3.up);
-            _rigidbody.AddForce(up * 5, ForceMode2D.Impulse);
+            _rigidbody.AddForce(up * jumpSpeed, ForceMode2D.Impulse);
         }
     }
 

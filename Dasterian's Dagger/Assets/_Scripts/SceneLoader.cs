@@ -8,6 +8,14 @@ public class SceneLoader : MonoBehaviour
 {
     public void LoadInitialGame()
     {
-        SceneManager.LoadScene("TutorialArea");
+        SceneManager.LoadScene("TestScene");
+    }
+    public void LoadStartScreen()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
+    public void LoadDeathScreen()
+    {
+        SceneManager.LoadScene("DeathScreen");
     }
 }
