@@ -227,6 +227,18 @@ TextureImporter:
   - first:
       213: 476653306745026313
     second: exampleTileSet_74
+  - first:
+      213: -4890660781753838551
+    second: exampleTileSet_75
+  - first:
+      213: 3398697345890339042
+    second: exampleTileSet_76
+  - first:
+      213: 4404869610135991044
+    second: exampleTileSet_77
+  - first:
+      213: -6082419298177580484
+    second: exampleTileSet_78
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -270,7 +282,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -315,12 +327,12 @@ TextureImporter:
       name: exampleTileSet_0
       rect:
         serializedVersion: 2
-        x: 64
+        x: 79
         y: 268
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,12 +348,12 @@ TextureImporter:
       name: exampleTileSet_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 268
+        x: 47
+        y: 236
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,12 +369,12 @@ TextureImporter:
       name: exampleTileSet_2
       rect:
         serializedVersion: 2
-        x: 32
+        x: 79
         y: 236
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,12 +390,12 @@ TextureImporter:
       name: exampleTileSet_3
       rect:
         serializedVersion: 2
-        x: 64
+        x: 111
         y: 236
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,12 +411,12 @@ TextureImporter:
       name: exampleTileSet_4
       rect:
         serializedVersion: 2
-        x: 96
+        x: 207
         y: 236
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,12 +432,12 @@ TextureImporter:
       name: exampleTileSet_5
       rect:
         serializedVersion: 2
-        x: 192
+        x: 271
         y: 236
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,12 +453,12 @@ TextureImporter:
       name: exampleTileSet_6
       rect:
         serializedVersion: 2
-        x: 224
+        x: 303
         y: 236
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,12 +474,12 @@ TextureImporter:
       name: exampleTileSet_7
       rect:
         serializedVersion: 2
-        x: 256
-        y: 236
+        x: 15
+        y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -483,12 +495,12 @@ TextureImporter:
       name: exampleTileSet_8
       rect:
         serializedVersion: 2
-        x: 288
-        y: 236
+        x: 47
+        y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -504,12 +516,12 @@ TextureImporter:
       name: exampleTileSet_9
       rect:
         serializedVersion: 2
-        x: 32
+        x: 79
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -525,12 +537,12 @@ TextureImporter:
       name: exampleTileSet_10
       rect:
         serializedVersion: 2
-        x: 64
+        x: 111
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -546,12 +558,12 @@ TextureImporter:
       name: exampleTileSet_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 136
         y: 204
         width: 32
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.521595, y: 0.5000005}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -567,12 +579,12 @@ TextureImporter:
       name: exampleTileSet_12
       rect:
         serializedVersion: 2
-        x: 128
+        x: 175
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -588,12 +600,12 @@ TextureImporter:
       name: exampleTileSet_13
       rect:
         serializedVersion: 2
-        x: 160
+        x: 207
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -609,12 +621,12 @@ TextureImporter:
       name: exampleTileSet_14
       rect:
         serializedVersion: 2
-        x: 192
+        x: 239
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -630,12 +642,12 @@ TextureImporter:
       name: exampleTileSet_15
       rect:
         serializedVersion: 2
-        x: 224
+        x: 271
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -651,12 +663,12 @@ TextureImporter:
       name: exampleTileSet_16
       rect:
         serializedVersion: 2
-        x: 256
+        x: 303
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -672,12 +684,12 @@ TextureImporter:
       name: exampleTileSet_17
       rect:
         serializedVersion: 2
-        x: 288
+        x: 335
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -693,12 +705,12 @@ TextureImporter:
       name: exampleTileSet_18
       rect:
         serializedVersion: 2
-        x: 320
+        x: 367
         y: 204
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -714,12 +726,12 @@ TextureImporter:
       name: exampleTileSet_19
       rect:
         serializedVersion: 2
-        x: 352
-        y: 204
+        x: 15
+        y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -735,12 +747,12 @@ TextureImporter:
       name: exampleTileSet_20
       rect:
         serializedVersion: 2
-        x: 32
+        x: 47
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -756,12 +768,12 @@ TextureImporter:
       name: exampleTileSet_21
       rect:
         serializedVersion: 2
-        x: 64
+        x: 79
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -777,12 +789,12 @@ TextureImporter:
       name: exampleTileSet_22
       rect:
         serializedVersion: 2
-        x: 96
+        x: 102
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -798,12 +810,12 @@ TextureImporter:
       name: exampleTileSet_23
       rect:
         serializedVersion: 2
-        x: 128
+        x: 136
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -819,12 +831,12 @@ TextureImporter:
       name: exampleTileSet_24
       rect:
         serializedVersion: 2
-        x: 160
+        x: 175
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -840,12 +852,12 @@ TextureImporter:
       name: exampleTileSet_25
       rect:
         serializedVersion: 2
-        x: 192
+        x: 207
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -861,12 +873,12 @@ TextureImporter:
       name: exampleTileSet_26
       rect:
         serializedVersion: 2
-        x: 224
+        x: 239
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -882,12 +894,12 @@ TextureImporter:
       name: exampleTileSet_27
       rect:
         serializedVersion: 2
-        x: 256
+        x: 271
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -903,12 +915,12 @@ TextureImporter:
       name: exampleTileSet_28
       rect:
         serializedVersion: 2
-        x: 288
+        x: 303
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -924,12 +936,12 @@ TextureImporter:
       name: exampleTileSet_29
       rect:
         serializedVersion: 2
-        x: 320
+        x: 335
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -945,12 +957,12 @@ TextureImporter:
       name: exampleTileSet_30
       rect:
         serializedVersion: 2
-        x: 352
+        x: 367
         y: 172
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -966,12 +978,12 @@ TextureImporter:
       name: exampleTileSet_31
       rect:
         serializedVersion: 2
-        x: 32
+        x: 15
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -987,12 +999,12 @@ TextureImporter:
       name: exampleTileSet_32
       rect:
         serializedVersion: 2
-        x: 64
+        x: 37
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1008,12 +1020,12 @@ TextureImporter:
       name: exampleTileSet_33
       rect:
         serializedVersion: 2
-        x: 96
+        x: 69
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1029,12 +1041,12 @@ TextureImporter:
       name: exampleTileSet_34
       rect:
         serializedVersion: 2
-        x: 128
+        x: 100
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1050,12 +1062,12 @@ TextureImporter:
       name: exampleTileSet_35
       rect:
         serializedVersion: 2
-        x: 160
+        x: 136
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1071,12 +1083,12 @@ TextureImporter:
       name: exampleTileSet_36
       rect:
         serializedVersion: 2
-        x: 192
+        x: 175
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1092,12 +1104,12 @@ TextureImporter:
       name: exampleTileSet_37
       rect:
         serializedVersion: 2
-        x: 224
+        x: 207
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1113,12 +1125,12 @@ TextureImporter:
       name: exampleTileSet_38
       rect:
         serializedVersion: 2
-        x: 256
+        x: 239
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1134,12 +1146,12 @@ TextureImporter:
       name: exampleTileSet_39
       rect:
         serializedVersion: 2
-        x: 288
+        x: 271
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1155,12 +1167,12 @@ TextureImporter:
       name: exampleTileSet_40
       rect:
         serializedVersion: 2
-        x: 320
+        x: 303
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1176,12 +1188,12 @@ TextureImporter:
       name: exampleTileSet_41
       rect:
         serializedVersion: 2
-        x: 352
+        x: 335
         y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1197,12 +1209,12 @@ TextureImporter:
       name: exampleTileSet_42
       rect:
         serializedVersion: 2
-        x: 32
-        y: 108
+        x: 367
+        y: 140
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1218,12 +1230,12 @@ TextureImporter:
       name: exampleTileSet_43
       rect:
         serializedVersion: 2
-        x: 64
-        y: 108
+        x: 20
+        y: 107
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1239,12 +1251,12 @@ TextureImporter:
       name: exampleTileSet_44
       rect:
         serializedVersion: 2
-        x: 96
-        y: 108
+        x: 52
+        y: 107
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1260,12 +1272,12 @@ TextureImporter:
       name: exampleTileSet_45
       rect:
         serializedVersion: 2
-        x: 128
-        y: 108
+        x: 86
+        y: 107
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1281,12 +1293,12 @@ TextureImporter:
       name: exampleTileSet_46
       rect:
         serializedVersion: 2
-        x: 160
-        y: 108
+        x: 104
+        y: 107
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1302,12 +1314,12 @@ TextureImporter:
       name: exampleTileSet_47
       rect:
         serializedVersion: 2
-        x: 192
+        x: 136
         y: 108
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1323,12 +1335,12 @@ TextureImporter:
       name: exampleTileSet_48
       rect:
         serializedVersion: 2
-        x: 224
+        x: 175
         y: 108
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1344,12 +1356,12 @@ TextureImporter:
       name: exampleTileSet_49
       rect:
         serializedVersion: 2
-        x: 256
+        x: 207
         y: 108
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1365,12 +1377,12 @@ TextureImporter:
       name: exampleTileSet_50
       rect:
         serializedVersion: 2
-        x: 288
+        x: 239
         y: 108
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1386,12 +1398,12 @@ TextureImporter:
       name: exampleTileSet_51
       rect:
         serializedVersion: 2
-        x: 320
+        x: 271
         y: 108
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1407,12 +1419,12 @@ TextureImporter:
       name: exampleTileSet_52
       rect:
         serializedVersion: 2
-        x: 352
+        x: 303
         y: 108
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1428,12 +1440,12 @@ TextureImporter:
       name: exampleTileSet_53
       rect:
         serializedVersion: 2
-        x: 32
-        y: 76
+        x: 335
+        y: 108
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1449,12 +1461,12 @@ TextureImporter:
       name: exampleTileSet_54
       rect:
         serializedVersion: 2
-        x: 64
-        y: 76
+        x: 367
+        y: 108
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1470,12 +1482,12 @@ TextureImporter:
       name: exampleTileSet_55
       rect:
         serializedVersion: 2
-        x: 96
-        y: 76
+        x: 15
+        y: 73
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1491,12 +1503,12 @@ TextureImporter:
       name: exampleTileSet_56
       rect:
         serializedVersion: 2
-        x: 128
-        y: 76
+        x: 47
+        y: 73
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1512,12 +1524,12 @@ TextureImporter:
       name: exampleTileSet_57
       rect:
         serializedVersion: 2
-        x: 160
-        y: 76
+        x: 79
+        y: 73
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1533,12 +1545,12 @@ TextureImporter:
       name: exampleTileSet_58
       rect:
         serializedVersion: 2
-        x: 192
-        y: 76
+        x: 101
+        y: 73
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1554,12 +1566,12 @@ TextureImporter:
       name: exampleTileSet_59
       rect:
         serializedVersion: 2
-        x: 224
+        x: 136
         y: 76
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1575,12 +1587,12 @@ TextureImporter:
       name: exampleTileSet_60
       rect:
         serializedVersion: 2
-        x: 256
+        x: 175
         y: 76
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1596,12 +1608,12 @@ TextureImporter:
       name: exampleTileSet_61
       rect:
         serializedVersion: 2
-        x: 288
+        x: 207
         y: 76
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1617,12 +1629,12 @@ TextureImporter:
       name: exampleTileSet_62
       rect:
         serializedVersion: 2
-        x: 320
+        x: 239
         y: 76
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1638,12 +1650,12 @@ TextureImporter:
       name: exampleTileSet_63
       rect:
         serializedVersion: 2
-        x: 352
+        x: 271
         y: 76
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1659,12 +1671,12 @@ TextureImporter:
       name: exampleTileSet_64
       rect:
         serializedVersion: 2
-        x: 32
-        y: 44
+        x: 303
+        y: 76
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1680,12 +1692,12 @@ TextureImporter:
       name: exampleTileSet_65
       rect:
         serializedVersion: 2
-        x: 64
-        y: 44
+        x: 335
+        y: 76
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1701,12 +1713,12 @@ TextureImporter:
       name: exampleTileSet_66
       rect:
         serializedVersion: 2
-        x: 96
-        y: 44
+        x: 367
+        y: 76
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1722,12 +1734,12 @@ TextureImporter:
       name: exampleTileSet_67
       rect:
         serializedVersion: 2
-        x: 128
+        x: 15
         y: 44
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1743,12 +1755,12 @@ TextureImporter:
       name: exampleTileSet_68
       rect:
         serializedVersion: 2
-        x: 160
+        x: 38
         y: 44
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1764,12 +1776,12 @@ TextureImporter:
       name: exampleTileSet_69
       rect:
         serializedVersion: 2
-        x: 192
+        x: 72
         y: 44
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1785,12 +1797,12 @@ TextureImporter:
       name: exampleTileSet_70
       rect:
         serializedVersion: 2
-        x: 224
+        x: 101
         y: 44
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1806,12 +1818,12 @@ TextureImporter:
       name: exampleTileSet_71
       rect:
         serializedVersion: 2
-        x: 256
+        x: 136
         y: 44
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1827,12 +1839,12 @@ TextureImporter:
       name: exampleTileSet_72
       rect:
         serializedVersion: 2
-        x: 288
+        x: 175
         y: 44
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1848,12 +1860,12 @@ TextureImporter:
       name: exampleTileSet_73
       rect:
         serializedVersion: 2
-        x: 320
+        x: 207
         y: 44
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1869,12 +1881,12 @@ TextureImporter:
       name: exampleTileSet_74
       rect:
         serializedVersion: 2
-        x: 352
+        x: 239
         y: 44
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1882,6 +1894,90 @@ TextureImporter:
       bones: []
       spriteID: 9077d8538a96d9600800000000000000
       internalID: 476653306745026313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exampleTileSet_75
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924d0aa4ee1e02cb0800000000000000
+      internalID: -4890660781753838551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exampleTileSet_76
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e84bd0aa399a2f20800000000000000
+      internalID: 3398697345890339042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exampleTileSet_77
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403b11a829d312d30800000000000000
+      internalID: 4404869610135991044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exampleTileSet_78
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 44
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c320525dfd7e69ba0800000000000000
+      internalID: -6082419298177580484
       vertices: []
       indices: 
       edges: []
