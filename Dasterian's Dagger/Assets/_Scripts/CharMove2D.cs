@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CharMove2D : MonoBehaviour
 {
-    public float movementSpeed = 1f;
-    public float jumpSpeed = 1f;
+    public float movementSpeed = 1;
+    public float jumpSpeed = 1;
 
     private Rigidbody2D _rigidbody;
 
@@ -21,12 +21,19 @@ public class CharMove2D : MonoBehaviour
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * movementSpeed;
 
-        
-        if (Input.GetKeyDown("space"))
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.velocity.y) < 0.001f)
         {
-            Vector3 up = transform.TransformDirection(Vector3.up);
-            _rigidbody.AddForce(up * jumpSpeed, ForceMode2D.Impulse);
+            _rigidbody.AddForce(new Vector2(0, jumpSpeed), ForceMode2D.Impulse);
         }
+
+        Vector3 characterScale = transform.localScale;
+        if(Input.GetAxis("Horizontal") < 0){
+            characterScale.x = 1.2f;
+        }
+        if(Input.GetAxis("Horizontal") > 0) {
+            characterScale.x = -1.2f;
+        }
+        transform.localScale = characterScale;
     }
 
 }
