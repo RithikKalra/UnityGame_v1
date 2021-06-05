@@ -40,7 +40,7 @@ public class TextController : MonoBehaviour
             talkText.gameObject.SetActive(false);
         }
 
-        if(dialogueController.convoStarted && Input.GetKeyDown("enter"))
+        if(dialogueController.convoStarted && Input.GetKeyDown("space"))
         {
             dialogueController.DisplayNextSentence();
         }
