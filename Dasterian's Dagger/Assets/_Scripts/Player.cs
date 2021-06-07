@@ -16,9 +16,14 @@ public class Player : MonoBehaviour
 
     private SceneLoader sceneloader;
 
+    AudioSource audioData;
+    public AudioClip clip;
+
+
     void Awake()
     {
         sceneloader = GameObject.Find("SceneManager").GetComponent<SceneLoader>();
+        audioData = GetComponent<AudioSource>();
     }
     
     // Start is called before the first frame update
@@ -45,6 +50,11 @@ public class Player : MonoBehaviour
         if(other.gameObject.CompareTag("Coins")){
             Destroy(other.gameObject);
             coins++;
+        }
+
+        if(other.gameObject.CompareTag("Diamonds")){
+            Destroy(other.gameObject);
+            coins = coins + 5;
         }
     }
 

@@ -30,7 +30,7 @@ public class TonyController : TextController
             talkText.gameObject.SetActive(false);
         }
 
-        if (dialogueController.convoStarted && tonyConvo && Input.GetKeyDown("enter"))
+        if (dialogueController.convoStarted && tonyConvo && (Input.GetKeyDown("enter") || Input.GetKeyDown("return")))
         {
             dialogueController.DisplayNextSentence();
         }

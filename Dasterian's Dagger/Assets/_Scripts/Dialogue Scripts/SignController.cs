@@ -31,7 +31,7 @@ public class SignController : TextController
             talkText.gameObject.SetActive(false);
         }
 
-        if (dialogueController.convoStarted && signConvo && Input.GetKeyDown("enter"))
+        if (dialogueController.convoStarted && signConvo && (Input.GetKeyDown("enter") || Input.GetKeyDown("return")))
         {
             dialogueController.DisplayNextSentence();
         }
