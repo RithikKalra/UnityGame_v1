@@ -58,6 +58,19 @@ public class Player : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.name.Equals("Platform")){
+            this.transform.parent = other.transform;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D other){
+        if(other.gameObject.name.Equals("Platform")){
+            this.transform.parent = null;
+        }
+    }
+
+
     private void deathReset()
     {
         health = 100;
