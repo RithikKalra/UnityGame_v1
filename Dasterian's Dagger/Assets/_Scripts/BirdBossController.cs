@@ -53,10 +53,11 @@ public class BirdBossController : MonoBehaviour
 
         if (health <= 0)
         {
-            Vector2 pos = gameObject.transform.position;
+            Vector2 pos = transform.position;
 
             for(int i = 0; i < 5; i++)
             {
+                pos = new Vector2(transform.position.x + i*2, transform.position.y + 1);
                 Instantiate(diamond, pos, Quaternion.identity);
             }
             

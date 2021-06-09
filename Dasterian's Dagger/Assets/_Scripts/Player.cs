@@ -60,10 +60,14 @@ public class Player : MonoBehaviour
             coins = coins + 5;
         }
 
-        if (other.gameObject.CompareTag("EnemyTroll") && !immune)
-        {
-            healthSystem.damagePlayer(1);
-
+        if (other.gameObject.CompareTag("EnemyTroll"))
+        { 
+            if (!immune)
+            {
+                healthSystem.damagePlayer(1);
+            }
+            immune = true;
+            Invoke("ResetImmunity", 2);
             if (this.transform.position.x < other.transform.position.x)
             {
                 playerMovement.basicKnockbackLeft(5);
@@ -71,13 +75,17 @@ public class Player : MonoBehaviour
             else
             {
                 playerMovement.basicKnockbackRight(5);
-            }
+            } 
         }
 
-        if (other.gameObject.CompareTag("EagleMiniBoss") && !immune)
+        if (other.gameObject.CompareTag("EagleMiniBoss"))
         {
-            healthSystem.damagePlayer(1);
-
+            if (!immune)
+            {
+                healthSystem.damagePlayer(1);
+            }
+            immune = true;
+            Invoke("ResetImmunity", 2);
             if (this.transform.position.x < other.transform.position.x)
             {
                 playerMovement.basicKnockbackLeft(10);
@@ -85,7 +93,7 @@ public class Player : MonoBehaviour
             else
             {
                 playerMovement.basicKnockbackRight(10);
-            }
+            }  
         }
     }
 
@@ -105,5 +113,9 @@ public class Player : MonoBehaviour
     {
         healthSystem.health = 3;
         sceneloader.LoadDeathScreen();
+    }
+    private void ResetImmunity()
+    {
+        immune = false;
     }
 }
