@@ -6,24 +6,23 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     private float dmg;
-    private float health = 100;
+    private bool isDead = false;
 
     public int coins = 0;
     public Text coinText;
 
-    private bool isDead = false;
-    
-
+    public HealthSystem healthSystem;
     private SceneLoader sceneloader;
+    private CharMove2D playerMovement;
 
     AudioSource audioData;
     public AudioClip clip;
 
-
     void Awake()
     {
         sceneloader = GameObject.Find("SceneManager").GetComponent<SceneLoader>();
-        audioData = GetComponent<AudioSource>();
+        playerMovement = this.GetComponent<CharMove2D>();
+        audioData = GetComponent<AudioSource>(); 
     }
     
     // Start is called before the first frame update
@@ -40,21 +39,53 @@ public class Player : MonoBehaviour
         else
             coinText.text = coins.ToString();
 
-        if (transform.position.y < -15f || health < 0)
+        if (transform.position.y < -15f || healthSystem.health <= 0)
         {
             deathReset();
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other){
-        if(other.gameObject.CompareTag("Coins")){
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coins"))
+        {
             Destroy(other.gameObject);
             coins++;
         }
 
-        if(other.gameObject.CompareTag("Diamonds")){
+        if (other.gameObject.CompareTag("Diamonds"))
+        {
             Destroy(other.gameObject);
             coins = coins + 5;
+        }
+
+        if (other.gameObject.CompareTag("EnemyTroll"))
+        {
+            healthSystem.damagePlayer(4);
+
+            if (this.transform.position.x < other.transform.position.x)
+            {
+                playerMovement.basicKnockbackLeft(5);
+            }
+            else
+            {
+                playerMovement.basicKnockbackRight(5);
+            }
+        }
+
+        if (other.gameObject.CompareTag("EagleMiniBoss"))
+        {
+            healthSystem.damagePlayer(4);
+            healthSystem.damagePlayer(4);
+
+            if (this.transform.position.x < other.transform.position.x)
+            {
+                playerMovement.basicKnockbackLeft(10);
+            }
+            else
+            {
+                playerMovement.basicKnockbackRight(10);
+            }
         }
     }
 
@@ -70,10 +101,9 @@ public class Player : MonoBehaviour
         }
     }
 
-
     private void deathReset()
     {
-        health = 100;
+        healthSystem.health = 12;
         sceneloader.LoadDeathScreen();
     }
 }

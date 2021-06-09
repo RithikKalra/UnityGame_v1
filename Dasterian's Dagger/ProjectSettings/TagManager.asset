@@ -10,6 +10,7 @@ TagManager:
   - Diamonds
   - EnemyTroll
   - Platform
+  - EagleMiniBoss
   layers:
   - Default
   - TransparentFX
