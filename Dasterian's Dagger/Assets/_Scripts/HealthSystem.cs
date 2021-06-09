@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class HealthSystem : MonoBehaviour
 {
-    public Animator[] heartAnimator;
+    public Animator[] hAnimations;
     public int health;
-    
+    public GameObject heart;
 
-    private int maxHealth = 12;
-    private int index = 0;
+    Stack<Animator> heartAnimator = new Stack<Animator>();
+    private int maxHealth = 3;
     
+    void Start()
+    {
+        for(int i = 0; i < hAnimations.Length; i++)
+        {
+            heartAnimator.Push(hAnimations[i]);
+        }
+    }
 
     public void damagePlayer(int damage)
     {
-        heartAnimator[index].SetBool("isHurt", true);
-        index++;
+        heartAnimator.Pop().SetBool("isHurt", true);
         health -= damage;
     }
     public int getMaxHealth()
@@ -25,5 +31,12 @@ public class HealthSystem : MonoBehaviour
     public void setMaxHealth(int mHealth)
     {
         maxHealth = mHealth;
+    }
+    public void restoreHealth(int amount)
+    {
+        for(int i = 0; i < amount; i++)
+        {
+            //heartAnimator.Push(hAnimations[heartAnimator.Count() - 1]);
+        }
     }
 }

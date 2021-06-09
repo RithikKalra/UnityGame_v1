@@ -5,24 +5,102 @@ using UnityEngine;
 public class BirdBossController : MonoBehaviour
 {
     public GameObject[] path;
+    public int health;
+
+    public GameObject eagleUI;
+    public GameObject playerAttack;
+    public GameObject playerObj;
+    public Player player;
+    public HealthBarController healthBar;
+    public Transform diamond;
+
     private int index = 0;
     private float speed = 10f;
-    
+    private bool isAttacked = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        healthBar.SetMaxHealth(health);
     }
 
     // Update is called once per frame
     void Update()
+    {
+        if (Vector2.Distance(transform.position, playerObj.transform.position) < 30)
+           eagleUI.gameObject.SetActive(true);
+        else
+           eagleUI.gameObject.SetActive(false);
+
+        if (transform.position.x - playerObj.transform.position.x > -3 && transform.position.x - playerObj.transform.position.x < 3 && playerObj.transform.position.y > transform.position.y && !player.immune)
+        {
+            playerAttack.gameObject.SetActive(true);
+            if (Input.GetKeyDown("space"))
+            {
+                isAttacked = true;
+                Invoke("AttackEagle", 0.1f);
+            }
+        }
+        else
+        {
+            playerAttack.gameObject.SetActive(false);
+        }
+
+        if (!isAttacked)
+            EagleMovement();
+        else
+            Invoke("EagleMovement", 2);
+
+        if (health <= 0)
+        {
+            Vector2 pos = gameObject.transform.position;
+
+            for(int i = 0; i < 5; i++)
+            {
+                Instantiate(diamond, pos, Quaternion.identity);
+            }
+            
+            playerAttack.gameObject.SetActive(false);
+            eagleUI.gameObject.SetActive(false);
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void AttackEagle()
+    {
+        
+        playerObj.transform.position = new Vector2(transform.position.x, transform.position.y + 2);
+
+        player.immune = true;
+        do
+        {
+            Vector2 pTransform = playerObj.transform.position;
+            pTransform.y -= 1;
+            playerObj.transform.position = pTransform;
+
+            Vector2 eTransform = transform.position;
+            eTransform.y -= 1;
+            transform.position = eTransform;
+
+        } while (transform.position.y > -2);
+      
+         health -= 26;
+         healthBar.SetHealth(health);
+
+        if(health < 25)
+        {
+             speed = 20f;
+        }
+    }
+
+    private void EagleMovement()
     {
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, path[index].transform.position, step);
 
         if (transform.position.x == path[index].transform.position.x)
         {
-            if(index == 11)
+            if (index == 11)
             {
                 index = 0;
             }
@@ -32,7 +110,9 @@ public class BirdBossController : MonoBehaviour
                 theScale.x *= -1;
                 transform.localScale = theScale;
             }
-                index++;
+            index++;
         }
+        isAttacked = false;
+        player.immune = false;
     }
 }

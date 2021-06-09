@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
 
     public int coins = 0;
     public Text coinText;
+    public bool immune;
 
     public HealthSystem healthSystem;
     private SceneLoader sceneloader;
@@ -59,9 +60,9 @@ public class Player : MonoBehaviour
             coins = coins + 5;
         }
 
-        if (other.gameObject.CompareTag("EnemyTroll"))
+        if (other.gameObject.CompareTag("EnemyTroll") && !immune)
         {
-            healthSystem.damagePlayer(4);
+            healthSystem.damagePlayer(1);
 
             if (this.transform.position.x < other.transform.position.x)
             {
@@ -73,10 +74,9 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (other.gameObject.CompareTag("EagleMiniBoss"))
+        if (other.gameObject.CompareTag("EagleMiniBoss") && !immune)
         {
-            healthSystem.damagePlayer(4);
-            healthSystem.damagePlayer(4);
+            healthSystem.damagePlayer(1);
 
             if (this.transform.position.x < other.transform.position.x)
             {
@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
 
     private void deathReset()
     {
-        healthSystem.health = 12;
+        healthSystem.health = 3;
         sceneloader.LoadDeathScreen();
     }
 }

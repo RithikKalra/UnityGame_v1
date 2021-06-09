@@ -11,6 +11,7 @@ TagManager:
   - EnemyTroll
   - Platform
   - EagleMiniBoss
+  - Ground
   layers:
   - Default
   - TransparentFX
