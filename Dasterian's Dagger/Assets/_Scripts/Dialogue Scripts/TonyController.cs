@@ -6,10 +6,12 @@ using UnityEngine;
 public class TonyController : TextController
 {
     private bool tonyConvo = false;
+    private int limitedCoins = 1;
+    private CharMove2D thePlayer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        thePlayer = FindObjectOfType<CharMove2D>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class TonyController : TextController
             talkText.gameObject.SetActive(true);
             if (Input.GetKeyDown("e"))
             {
+                thePlayer.canMove = false;
                 dialogueController.convoInitialized = true;
                 tonyConvo = true;
                 InitializeConvo();
@@ -38,13 +41,17 @@ public class TonyController : TextController
         if(!dialogueController.convoStarted && tonyConvo)
         {
             EndConvo();
+            if(limitedCoins > 0)
+            {
+                player.coins += 10;
+                limitedCoins--;
+            }
         }
     }
 
     public override void EndConvo()
     {
+        thePlayer.canMove = true;
         tonyConvo = false;
-        player.coins += 10;
-        print("Good Riddance");
     }
 }

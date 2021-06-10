@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CharMove2D : MonoBehaviour
 {
-    public float movementSpeed = 1;
+    public float movementSpeed = 5;
     public float jumpSpeed = 1;
 
     private Rigidbody2D _rigidbody;
     private bool push = false;
+    public bool canMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,19 @@ public class CharMove2D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!canMove)
+        {
+            if(_rigidbody.velocity.y > 0.001f || _rigidbody.velocity.y < -0.001f)
+            {
+                transform.position += new Vector3(0, -3.5f, 0) * Time.deltaTime;
+            }
+            else
+            {
+                _rigidbody.velocity = Vector2.zero;
+            }
+           return;
+        }
+
         if (!push)
         {
             var movement = Input.GetAxis("Horizontal");

@@ -6,10 +6,12 @@ using UnityEngine;
 public class SignController : TextController
 {
     public bool signConvo = false;
+    private CharMove2D thePlayer;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        thePlayer = FindObjectOfType<CharMove2D>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class SignController : TextController
             talkText.gameObject.SetActive(true);
             if (Input.GetKeyDown("e"))
             {
+                thePlayer.canMove = false;
                 dialogueController.convoInitialized = true;
                 signConvo = true;
                 InitializeConvo();
@@ -44,8 +47,8 @@ public class SignController : TextController
 
     public override void EndConvo()
     {
+        thePlayer.canMove = true;
         signConvo = false;
-        print("WTF");
     }
     
 }
