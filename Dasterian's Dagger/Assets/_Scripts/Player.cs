@@ -19,6 +19,16 @@ public class Player : MonoBehaviour
     AudioSource audioData;
     public AudioClip clip;
 
+    public Color flashColor;
+    public Color regularColor;
+    public float flashDuration;
+    public int numberOfFlashes;
+    public Collider2D triggerCollider1;
+    public Collider2D triggerCollider2;
+    public Collider2D triggerCollider3;
+    public SpriteRenderer mySprite;
+
+
     void Awake()
     {
         sceneloader = GameObject.Find("SceneManager").GetComponent<SceneLoader>();
@@ -62,37 +72,39 @@ public class Player : MonoBehaviour
 
         if (other.gameObject.CompareTag("EnemyTroll"))
         { 
-            if (!immune)
+            if(!immune)
             {
                 healthSystem.damagePlayer(1);
             }
-            immune = true;
-            Invoke("ResetImmunity", 2);
+
+            StartCoroutine(FlashCo());
+
             if (this.transform.position.x < other.transform.position.x)
             {
-                playerMovement.basicKnockbackLeft(5);
+                playerMovement.basicKnockbackLeft(3);
             }
             else
             {
-                playerMovement.basicKnockbackRight(5);
+                playerMovement.basicKnockbackRight(3);
             } 
         }
 
         if (other.gameObject.CompareTag("EagleMiniBoss"))
-        {
-            if (!immune)
+        { 
+            if(!immune)
             {
                 healthSystem.damagePlayer(1);
             }
-            immune = true;
-            Invoke("ResetImmunity", 2);
+
+            StartCoroutine(FlashCo());
+
             if (this.transform.position.x < other.transform.position.x)
             {
-                playerMovement.basicKnockbackLeft(10);
+                playerMovement.basicKnockbackLeft(3);
             }
             else
             {
-                playerMovement.basicKnockbackRight(10);
+                playerMovement.basicKnockbackRight(3);
             }  
         }
     }
@@ -107,6 +119,25 @@ public class Player : MonoBehaviour
         if(other.gameObject.name.Equals("Platform")){
             this.transform.parent = null;
         }
+    }
+
+    private IEnumerator FlashCo()
+    {
+        int temp = 0;
+        immune = true;
+        triggerCollider1.enabled = false;
+        triggerCollider2.enabled = false;
+        while(temp < numberOfFlashes)
+        {
+            mySprite.color = flashColor;
+            yield return new WaitForSeconds(flashDuration);
+            mySprite.color = regularColor;
+            yield return new WaitForSeconds(flashDuration);
+            temp++;
+        }
+        triggerCollider1.enabled = true;
+        triggerCollider2.enabled = false;
+        immune = false;
     }
 
     private void deathReset()

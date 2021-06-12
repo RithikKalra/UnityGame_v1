@@ -72,7 +72,6 @@ public class BirdBossController : MonoBehaviour
         
         playerObj.transform.position = new Vector2(transform.position.x, transform.position.y + 2);
 
-        player.immune = true;
         do
         {
             Vector2 pTransform = playerObj.transform.position;
@@ -114,6 +113,5 @@ public class BirdBossController : MonoBehaviour
             index++;
         }
         isAttacked = false;
-        player.immune = false;
     }
 }

@@ -7,7 +7,7 @@ public class CharMove2D : MonoBehaviour
     public float movementSpeed = 5;
     public float jumpSpeed = 1;
     bool jumped;
-    private bool isGrounded = true;
+    public bool isGrounded = true;
 
     private Rigidbody2D _rigidbody;
     private bool push = false;

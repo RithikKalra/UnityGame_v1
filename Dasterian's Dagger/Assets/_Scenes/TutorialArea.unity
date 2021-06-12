@@ -907,6 +907,7 @@ GameObject:
   - component: {fileID: 239685715}
   - component: {fileID: 239685720}
   - component: {fileID: 239685714}
+  - component: {fileID: 239685721}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -947,6 +948,14 @@ MonoBehaviour:
   immune: 0
   healthSystem: {fileID: 1794591920}
   clip: {fileID: 8300000, guid: bd8857660a16ba549b8cc522d93d9117, type: 3}
+  flashColor: {r: 1, g: 0.2926092, b: 0, a: 0.5529412}
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.07
+  numberOfFlashes: 10
+  triggerCollider1: {fileID: 239685720}
+  triggerCollider2: {fileID: 239685714}
+  triggerCollider3: {fileID: 0}
+  mySprite: {fileID: 239685718}
 --- !u!114 &239685716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,6 +970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   jumpSpeed: 8
+  isGrounded: 1
   canMove: 1
 --- !u!50 &239685717
 Rigidbody2D:
@@ -977,7 +987,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 1.15
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1061,7 +1071,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.058987603, y: 0.3540071}
+  m_Offset: {x: 0.034812897, y: 0.2615447}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1072,8 +1082,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9393375, y: 0.8919857}
+  m_Size: {x: 1.1269386, y: 1.0769105}
   m_EdgeRadius: 0
+--- !u!70 &239685721
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239685713}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.07, y: -0.312}
+  m_Size: {x: 0.005, y: 0.96}
+  m_Direction: 0
 --- !u!1001 &241420851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1746,7 +1772,7 @@ PrefabInstance:
     - target: {fileID: 7162370295676767244, guid: ec7602c82ce3ec943b2f41d1159c65b6,
         type: 3}
       propertyPath: m_Layer
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7162370295676767247, guid: ec7602c82ce3ec943b2f41d1159c65b6,
         type: 3}
