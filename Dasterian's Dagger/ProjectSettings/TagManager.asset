@@ -12,6 +12,7 @@ TagManager:
   - Platform
   - EagleMiniBoss
   - Ground
+  - Head
   layers:
   - Default
   - TransparentFX
