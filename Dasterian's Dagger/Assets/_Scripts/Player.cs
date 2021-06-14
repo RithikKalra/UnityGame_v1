@@ -75,10 +75,7 @@ public class Player : MonoBehaviour
             if(!immune)
             {
                 healthSystem.damagePlayer(1);
-            }
 
-            if(!immune)
-            {
                 if (this.transform.position.x < other.transform.position.x)
                 {
                     playerMovement.basicKnockbackLeft(3);
@@ -87,9 +84,11 @@ public class Player : MonoBehaviour
                 {
                     playerMovement.basicKnockbackRight(3);
                 }
+
+                StartCoroutine(FlashCo());
             }
 
-            StartCoroutine(FlashCo()); 
+            
         }
 
         if (other.gameObject.CompareTag("EagleMiniBoss"))
@@ -97,10 +96,7 @@ public class Player : MonoBehaviour
             if(!immune)
             {
                 healthSystem.damagePlayer(1);
-            }
 
-            if(!immune)
-            {
                 if (this.transform.position.x < other.transform.position.x)
                 {
                     playerMovement.basicKnockbackLeft(3);
@@ -109,9 +105,9 @@ public class Player : MonoBehaviour
                 {
                     playerMovement.basicKnockbackRight(3);
                 }
+
+                StartCoroutine(FlashCo());
             } 
-            
-            StartCoroutine(FlashCo()); 
         }
     }
 

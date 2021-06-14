@@ -38,6 +38,7 @@ public class BirdBossController : MonoBehaviour
             if (Input.GetKeyDown("space"))
             {
                 isAttacked = true;
+                player.immune = true;
                 Invoke("AttackEagle", 0.1f);
             }
         }
@@ -113,5 +114,6 @@ public class BirdBossController : MonoBehaviour
             index++;
         }
         isAttacked = false;
+        player.immune = false;
     }
 }
