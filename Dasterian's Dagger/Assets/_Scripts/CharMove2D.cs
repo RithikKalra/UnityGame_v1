@@ -13,6 +13,8 @@ public class CharMove2D : MonoBehaviour
     private bool push = false;
     public bool canMove = true;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,6 @@ public class CharMove2D : MonoBehaviour
         {
             jumped = true;
         }
-       
     }
 
     void FixedUpdate()
@@ -46,6 +47,7 @@ public class CharMove2D : MonoBehaviour
 
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * movementSpeed * Time.deltaTime;
+        animator.SetFloat("speed", movement);
 
         if (jumped == true && (Mathf.Abs(_rigidbody.velocity.y) < 0.0001f) && isGrounded)
         {
@@ -57,14 +59,15 @@ public class CharMove2D : MonoBehaviour
         Vector3 characterScale = transform.localScale;
         if (Input.GetAxis("Horizontal") < 0)
         {
-            characterScale.x = 1.2f;
+            characterScale.x = -0.8f;
+            
         }
         if (Input.GetAxis("Horizontal") > 0)
         {
-            characterScale.x = -1.2f;
+            characterScale.x = 0.8f;
         }
         transform.localScale = characterScale;
-
+        
     }
 
     private void OnCollisionEnter2D(Collision2D Collision)
@@ -93,5 +96,5 @@ public class CharMove2D : MonoBehaviour
     private void RemoveControl()
     {
         push = true;
-    } 
+    }
 }
