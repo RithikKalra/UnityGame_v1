@@ -138,7 +138,7 @@ public class Player : MonoBehaviour
             temp++;
         }
         triggerCollider1.enabled = true;
-        triggerCollider2.enabled = false;
+        triggerCollider2.enabled = true;
         immune = false;
     }
 

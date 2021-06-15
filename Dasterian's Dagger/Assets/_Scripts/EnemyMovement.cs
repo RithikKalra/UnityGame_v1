@@ -31,4 +31,9 @@ public class EnemyMovement : MonoBehaviour
 			}	
 		}
 	}
+
+	public void Hurt()
+	{
+		Destroy(this.gameObject);
+	}
 }
