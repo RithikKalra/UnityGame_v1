@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    private float dmg;
+    public int attackDamage;
     private bool isDead = false;
 
     public int coins = 0;
@@ -54,6 +54,11 @@ public class Player : MonoBehaviour
         {
             deathReset();
         }
+    }
+
+    public void Attack(CharacterStats targetStats)
+    {
+        targetStats.TakeDamage(attackDamage);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -123,6 +128,7 @@ public class Player : MonoBehaviour
         }
     }
 
+    //You should make this into a class so we can use it on enemies and npc's as well
     private IEnumerator FlashCo()
     {
         int temp = 0;

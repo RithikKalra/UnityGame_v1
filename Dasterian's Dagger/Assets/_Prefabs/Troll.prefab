@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7162370295676767246}
   - component: {fileID: 7162370295676767248}
   - component: {fileID: 7162370295676767251}
+  - component: {fileID: 1637799960532645298}
   m_Layer: 0
   m_Name: Troll
   m_TagString: EnemyTroll
@@ -145,3 +146,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   MoveRight: 0
+--- !u!114 &1637799960532645298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7162370295676767244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a30f81393be25748b328c75a19b6d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 15
+  damage: 1
+  player: {fileID: 3623346555224471543, guid: f7464ffee279ee04d8f6a3389dd1ee5d, type: 3}
+  coin: {fileID: 834189607555097890, guid: 8f8ca776766a92844b3aece90ea9694b, type: 3}
+  healthBar: {fileID: 0}

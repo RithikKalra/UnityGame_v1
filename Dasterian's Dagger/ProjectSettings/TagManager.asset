@@ -13,6 +13,7 @@ TagManager:
   - EagleMiniBoss
   - Ground
   - Head
+  - Attack
   layers:
   - Default
   - TransparentFX
