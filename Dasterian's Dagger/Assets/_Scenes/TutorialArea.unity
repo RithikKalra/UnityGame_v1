@@ -21404,6 +21404,11 @@ PrefabInstance:
       propertyPath: healthSystem
       value: 
       objectReference: {fileID: 1794591920}
+    - target: {fileID: 3623346555241259310, guid: f7464ffee279ee04d8f6a3389dd1ee5d,
+        type: 3}
+      propertyPath: field of view
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7464ffee279ee04d8f6a3389dd1ee5d, type: 3}
 --- !u!1001 &3705960284142823416

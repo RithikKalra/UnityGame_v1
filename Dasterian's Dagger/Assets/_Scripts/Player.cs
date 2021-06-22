@@ -27,6 +27,7 @@ public class Player : MonoBehaviour
     public Collider2D triggerCollider2;
     public Collider2D triggerCollider3;
     public SpriteRenderer mySprite;
+    public Animator animator;
 
 
     void Awake()
@@ -50,9 +51,14 @@ public class Player : MonoBehaviour
         else
             coinText.text = coins.ToString();
 
-        if (transform.position.y < -15f || healthSystem.health <= 0)
+        if (transform.position.y < -15f)
         {
             deathReset();
+        }
+        if(healthSystem.health <= 0)
+        {
+            animator.SetBool("died", true);
+            Invoke("deathReset", 2f);
         }
     }
 

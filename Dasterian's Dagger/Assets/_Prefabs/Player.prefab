@@ -79,13 +79,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1509690687825009327, guid: 9c68c2bb9240dee47ac745db25c285fd,
+  m_Sprite: {fileID: 8823596386833456969, guid: 129cbe9f5665ad640a91a11c0b6548e3,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.16, y: 0.34}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -155,6 +155,7 @@ MonoBehaviour:
   triggerCollider2: {fileID: 3623346555224471542}
   triggerCollider3: {fileID: 0}
   mySprite: {fileID: 3623346555224471538}
+  animator: {fileID: 3623346555224471550}
 --- !u!114 &3623346555224471551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sword: {fileID: 6934668864758156473, guid: 490e30dbd5f325947a6fb4988a53c55f, type: 3}
+  animator: {fileID: 3623346555224471550}
 --- !u!61 &3623346555224471548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -185,8 +187,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 3}
-    newSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.7777778, y: 3.7777777}
+    newSize: {x: 0.16, y: 0.34}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -302,7 +304,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 90
+  field of view: 100
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
