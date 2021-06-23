@@ -18571,6 +18571,7 @@ GameObject:
   - component: {fileID: 1466466711}
   - component: {fileID: 1466466710}
   - component: {fileID: 1466466709}
+  - component: {fileID: 1466466714}
   - component: {fileID: 1466466713}
   m_Layer: 0
   m_Name: EagleMiniBoss
@@ -18604,7 +18605,6 @@ MonoBehaviour:
   - {fileID: 1936309775}
   - {fileID: 1741642472}
   - {fileID: 170359812}
-  health: 100
   eagleUI: {fileID: 1312130355}
   playerAttack: {fileID: 1789975542}
   playerObj: {fileID: 239685713}
@@ -18732,6 +18732,22 @@ PolygonCollider2D:
       - {x: 0.90000004, y: -1.85}
       - {x: 1.7, y: -0.15}
       - {x: 1.7, y: 1.35}
+--- !u!114 &1466466714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466466708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a30f81393be25748b328c75a19b6d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 150
+  damage: 0
+  player: {fileID: 239685715}
+  coin: {fileID: 0}
 --- !u!1 &1488039642
 GameObject:
   m_ObjectHideFlags: 0

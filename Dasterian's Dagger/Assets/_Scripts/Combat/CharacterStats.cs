@@ -8,6 +8,7 @@ public class CharacterStats : MonoBehaviour
     public int damage;
     public Player player;
     public Transform coin;
+
     //public HealthBarController healthBar;
 
     void Start()
@@ -22,7 +23,7 @@ public class CharacterStats : MonoBehaviour
 
         if (health <= 0)
         {
-            Die();
+            Invoke("Die", 0.6f);
         }
     }
 

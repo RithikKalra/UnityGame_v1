@@ -5,7 +5,6 @@ using UnityEngine;
 public class BirdBossController : MonoBehaviour
 {
     public GameObject[] path;
-    public int health;
 
     public GameObject eagleUI;
     public GameObject playerAttack;
@@ -18,10 +17,13 @@ public class BirdBossController : MonoBehaviour
     private float speed = 10f;
     private bool isAttacked = false;
 
+    private CharacterStats eagleStats;
+
     // Start is called before the first frame update
     void Start()
     {
-        healthBar.SetMaxHealth(health);
+        eagleStats = this.GetComponent<CharacterStats>();
+        healthBar.SetMaxHealth(eagleStats.health);
     }
 
     // Update is called once per frame
@@ -52,7 +54,7 @@ public class BirdBossController : MonoBehaviour
         else
             Invoke("EagleMovement", 2);
 
-        if (health <= 0)
+        if (eagleStats.health <= 0)
         {
             Vector2 pos = transform.position;
 
@@ -65,6 +67,10 @@ public class BirdBossController : MonoBehaviour
             playerAttack.gameObject.SetActive(false);
             eagleUI.gameObject.SetActive(false);
             Destroy(this.gameObject);
+        }
+        else
+        {
+            healthBar.SetHealth(eagleStats.health);
         }
     }
 
@@ -85,10 +91,10 @@ public class BirdBossController : MonoBehaviour
 
         } while (transform.position.y > -2);
       
-         health -= 26;
-         healthBar.SetHealth(health);
+         eagleStats.health -= 50;
+         healthBar.SetHealth(eagleStats.health);
 
-        if(health < 25)
+        if(eagleStats.health < 25)
         {
              speed = 20f;
         }
